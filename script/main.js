@@ -7,7 +7,7 @@
 
       // i want to change all the content on the page
       function changeElements() {
-        //debugger; // this is a special term that stops code execution
+        debugger; // this is a special term that stops code execution
         let subImages = document.querySelector('.subImagesContainer');
         let objectIndex = dynamicContent[this.id];
 
@@ -24,11 +24,11 @@
           newSubImg.classList.add('thumb');
           // set the src
           newSubImg.src = "images/" + objectIndex.images[index];
-
+          // add it to the page
           newSubImg.dataset.index = index;
 
           // add an event handler to trigger a lightbox
-          newSubImg.addEventListener('click', popLightbox, false;)
+          newSubImg.addEventListener('click', function() {popLightbox(index, objectIndex);}, false);
 
           // add it to the page
           subImages.appendChild(newSubImg);
@@ -55,14 +55,28 @@
       });
 
       //trigger the lightbox
-      function popLightbox() {
-        debugger;
-      // trigger the lightbox overlay so that we can see it!
-      let lightbox = document.querySelector('.lightbox');
-      }
+      function popLightbox(currentIndex, currentObject) {
+        //debugger;
+        //move the window to the top every time we click - quick bug fix
+        window.scrollTo(0, 0);
+        document.body.style.overflow = "hidden";
+
+        // trigger the lightbox overlay so that we can see it!
+        let lightbox = document.querySelector('.lightbox');
+        let lightboxImg = lightbox.querySelector('img');
+        let lightboxDesc = lightbox.querySelector('p');
+        let lightBoxClose = lightbox.querySelector('.close-lightbox');
 
       lightbox.style.display = 'block';
+      lightboxImg.src = "images/" + currentObject.images[currentIndex];
+      lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
 
+      lightBoxClose.addEventListener('click', closeLightbox, false);
+    };
+
+      function closeLightbox() {
+        debugger;
+      }
       //document.querySelector('#spring').click();
       changeElements.call(document.querySelector('#spring'));
 
