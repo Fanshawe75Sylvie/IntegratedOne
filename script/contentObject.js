@@ -6,12 +6,20 @@ var dynamicContent = {
 
 			images : [
 				"spring_1.jpg",
-				"spring_2.jpg"
+				"spring_2.jpg",
+				"spring_3.jpg",
+				"spring_4.jpg",
+				"spring_5.jpg",
+				"spring_6.jpg"
 			],
 
 			imageDescription : [
 				"This is a bunch of butterflies",
-				"This is a ducky! or a chick. whatever."
+				"A baby chick in the daffodils",
+				"Sunshine and a field of daisies",
+				"Here are a pair of birds",
+				"The forest comes alive",
+				"Blossoms are a gift of spring"
 			]
 		},
 
@@ -22,7 +30,20 @@ var dynamicContent = {
 
 			images : [
 				"summer_1.jpg",
-				"summer_2.jpg"
+				"summer_2.jpg",
+				"summer_3.jpg",
+				"summer_4.jpg",
+				"summer_5.jpg",
+				"summer_6.jpg"
+			],
+
+			imageDescription : [
+				"Time to relax by the beach",
+				"A puppy naps in a hammock",
+				"Scenic vistas of summer travels",
+				"Enjoying the beach at sunset",
+				"Canoe trips with a moose nearby",
+				"Strawberries are ready"
 			]
 		},
 
@@ -33,7 +54,20 @@ var dynamicContent = {
 
 			images : [
 				"autumn_1.jpg",
-				"autumn_2.jpg"
+				"autumn_2.jpg",
+				"autumn_3.jpg",
+				"autumn_4.jpg",
+				"autumn_5.jpg",
+				"autumn_6.jpg"
+			],
+
+			imageDescription : [
+				"Road through the autumn woods",
+				"Harvest time abundance",
+				"Bucks stand majestically in the woods",
+				"Pumpkin patch in the countryside",
+				"The red maple leaf",
+				"Autumn colours by the lake"
 			]
 		},
 
@@ -44,7 +78,20 @@ var dynamicContent = {
 
 			images : [
 				"winter_1.jpg",
-				"winter_2.jpg"
+				"winter_2.jpg",
+				"winter_3.jpg",
+				"winter_4.jpg",
+				"winter_5.jpg",
+				"winter_6.jpg"
+			],
+
+			imageDescription : [
+				"The forest is silent in winter",
+				"Here's a snowman winter scene",
+				"A beautiful sparkling snowflake",
+				"In awe for the northern lights",
+				"Sleigh ride through the snow",
+				"Christmas tree lights up the night"
 			]
 		}
 	};

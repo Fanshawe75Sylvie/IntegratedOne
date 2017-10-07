@@ -7,7 +7,7 @@
 
       // i want to change all the content on the page
       function changeElements() {
-        debugger; // this is a special term that stops code execution
+        // debugger; // this is a special term that stops code execution
         let subImages = document.querySelector('.subImagesContainer');
         let objectIndex = dynamicContent[this.id];
 
@@ -75,7 +75,11 @@
     };
 
       function closeLightbox() {
-        debugger;
+        // debugger;
+        let lightbox = document.querySelector('.lightbox');
+        lightbox.style.display = "none";
+        document.body.style.overflow = "visible";
+
       }
       //document.querySelector('#spring').click();
       changeElements.call(document.querySelector('#spring'));
